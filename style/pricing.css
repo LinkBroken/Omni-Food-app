@@ -1,0 +1,65 @@
+.pricing {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 30px;
+  gap: 20px;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.f-card > button {
+  background-color: rgb(190, 193, 193);
+  font-size: larger;
+}
+.p-card > h1 {
+  color: rgb(82, 168, 114);
+}
+.g-card > h1 {
+  color: rgb(172, 122, 4);
+}
+.p-card > button {
+  background-color: rgb(82, 168, 114);
+  font-size: larger;
+}
+.g-card > button {
+  background-color: rgb(172, 122, 4);
+  font-size: larger;
+}
+.card:hover {
+  box-shadow: 1px 1px 1px 1px rgb(163, 157, 157);
+}
+.card > button {
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  border-radius: 15px;
+  width: 70%;
+}
+.card>button:hover{
+  cursor: pointer;
+  box-shadow: .5px .5px black;
+}
+.pricing-header {
+  text-decoration: underline;
+  margin-left: 10px;
+}
+.pricing > p {
+  color: rgb(243, 125, 28);
+}
+.pricing > p:hover {
+  text-decoration: underline orange;
+  cursor: pointer;
+}
+.card > ul {
+  display: flex;
+  flex-direction: column;
+}
+.card > ul > li {
+  list-style-type: none;
+}

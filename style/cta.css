@@ -1,0 +1,63 @@
+.cta-form{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 20%;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  border: 1px solid rgb(243, 125, 28);
+  gap: 20px;
+  background-color: #faf8f8 ;
+  color: rgb(75, 74, 74);
+  border-radius: 50px;
+}
+
+.cta-form>span>h1{
+  font-size: large;
+  padding: 2px;
+}
+.cta-form>span>hr{
+  color: #e67e22;
+}
+.cta-form>form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 20px;
+  
+}
+.cta-form>form>span>label{
+  text-decoration: underline #e67e22;
+}
+.cta-form>form>span>input{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.cta-form>form>span{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+  .sign-up-icon{
+    width: 15px;
+
+  }
+  .cta-form>button{
+    padding: 15px;
+    background-color: #e67e22 ;
+    border-radius: 20px;
+    border: none;
+    color: white;
+  }
+  .cta-form>button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px black;
+  }
+  .reg-header{
+    text-decoration: underline;
+    margin-left: 10px;
+    margin-top: 40px;
+}

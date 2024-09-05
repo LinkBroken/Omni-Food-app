@@ -1,0 +1,33 @@
+.testimonals{
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.test-header{
+    text-decoration: underline;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.user-testimony{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 50%;
+  border-radius: 20px;
+  border: 1px solid rgb(162, 160, 160);
+  box-shadow: 1px 1px black;
+}
+.user-testimony>img{
+  width: 80px;
+  border-radius: 70px;
+  padding: 20px;
+}
+.user-testimony>p{
+  width: 50%;
+  border-radius: 70px;
+  padding: 20px;
+  text-align: center;
+}

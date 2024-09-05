@@ -1,0 +1,52 @@
+.meals{
+  display: flex;
+  
+  justify-content: space-evenly;
+  width: 70%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  gap: 20px;
+}
+.meal{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  width: 25%;
+  justify-content: center;
+  padding: 15px;
+  background-color: white;
+  align-items: center;
+  border-radius: 30px;
+
+}
+.meals-header{
+  text-decoration: underline;
+  margin-left: 10px;
+}
+.meal:hover{
+  transform: scale(1.03);
+}
+.meal-description{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+.meal>img{
+  width: 80%;
+  border-radius: 40px;
+
+}
+.add-button{
+  color: white;
+  border-radius: 30px;
+  border: none;
+  padding: 14px;
+  background-color: #e67e22 ;
+}
+.add-button:hover{
+  box-shadow: 1px 1px black;
+  cursor: pointer;
+}
