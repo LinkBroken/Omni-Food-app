@@ -7,6 +7,8 @@ nav{
   /* box-shadow: 2px 2px 2px 2px black */
   border-bottom: 2px solid rgb(230, 227, 227);
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 .user-img-settings{
   width: 10%;
