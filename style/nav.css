@@ -28,17 +28,18 @@ nav{
 .welcome-message:first-child{
   font-weight:lighter;
 }
-.search-nar{
-  display: flex;
-}
 .search-bar{
-  width: 50%;
-
+  display: flex;
+  gap: 10px;
+    width: 50%;
+  align-items: center;
 }
+
 .search-icon{
   width: 20px;
   height: 25px;
   position: absolute;
+  
 
 }
 .settings-icon,.notification-icon{
