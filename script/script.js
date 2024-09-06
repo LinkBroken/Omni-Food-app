@@ -27,3 +27,23 @@ async function fishMeals() {
 }
 
 fishMeals()
+
+const mealNavLink = document.getElementById("meal-link")
+const priceNavLink = document.getElementById("pricing-link")
+const testNavLink = document.getElementById("testimonies-link")
+const homeNavLink = document.getElementById("Home-link");
+
+homeNavLink.addEventListener("click", () => {
+  console.log(document.getElementsByClassName("meal")[0])
+  document.getElementsByClassName("app")[0].scrollIntoView({ behavior: "smooth" })
+})
+mealNavLink.addEventListener("click", () => {
+  document.getElementsByClassName("meal")[0].scrollIntoView({ behavior: "smooth" })
+})
+testNavLink.addEventListener("click", () => {
+  console.log(document.getElementsByClassName("test-header"))
+  document.getElementsByClassName("test-header")[0].scrollIntoView(({ top: 10, behavior: "smooth" }))
+})
+priceNavLink.addEventListener("click", () => {
+  document.getElementsByClassName("pricing-header")[0].scrollIntoView(({ top: 700, behavior: "smooth" }))
+})

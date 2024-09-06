@@ -39,7 +39,6 @@
   text-decoration: none;
   color: white;
   border-radius: 15px;
-  width: 70%;
 }
 .card>button:hover{
   cursor: pointer;

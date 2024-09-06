@@ -10,6 +10,9 @@ nav{
   position: sticky;
   top: 0;
 }
+.hamburger{
+  display: none;
+}
 .user-img-settings{
   width: 10%;
   display: flex;
@@ -60,4 +63,21 @@ nav{
   cursor: pointer;
   background-color: aliceblue;
   padding: 5px;
+}
+.nav-links{
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+}
+.nav-links>a{
+  text-decoration: none;
+  color: black;
+  background-color: rgb(243, 243, 243);
+  padding: 10px;
+  border-radius: 10px;
+
+}
+.nav-links>a:hover{
+  background-color: white;
+
 }
