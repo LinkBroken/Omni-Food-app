@@ -47,3 +47,7 @@ testNavLink.addEventListener("click", () => {
 priceNavLink.addEventListener("click", () => {
   document.getElementsByClassName("pricing-header")[0].scrollIntoView(({ top: 700, behavior: "smooth" }))
 })
+
+
+
+
