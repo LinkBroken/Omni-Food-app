@@ -26,7 +26,7 @@
   margin-left: 10px;
 }
 .meal:hover{
-  transform: scale(1.03);
+background-color: azure;
 }
 .meal-description{
   display: flex;
