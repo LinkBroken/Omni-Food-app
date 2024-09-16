@@ -1,4 +1,4 @@
-.cta-form{
+.sign-up-form{
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -13,14 +13,14 @@
   border-radius: 50px;
 }
 
-.cta-form>span>h1{
+.sign-up-form>span>h1{
   font-size: large;
   padding: 2px;
 }
-.cta-form>span>hr{
+.sign-up-form>span>hr{
   color: #e67e22;
 }
-.cta-form>form{
+.sign-up-form>form{
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -28,12 +28,12 @@
   
 }
 
-.cta-form>form>span>input{
+.sign-up-form>form>span>input{
   padding: 10px;
   border-radius: 10px;
   border: 1px solid black;
 }
-.cta-form>form>span{
+.sign-up-form>form>span{
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -43,19 +43,18 @@
     width: 15px;
 
   }
-  .cta-form>button{
+  .sign-up-form>button{
     padding: 15px;
     background-color: #e67e22 ;
     border-radius: 20px;
     border: none;
     color: white;
   }
-  .cta-form>button:hover{
+  .sign-up-form>button:hover{
     cursor: pointer;
     box-shadow: 1px 1px black;
   }
   .reg-header{
-    text-decoration: underline;
     margin-left: 10px;
     margin-top: 40px;
 }

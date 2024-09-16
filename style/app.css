@@ -3,116 +3,120 @@
   margin: 0;
   font-family: sans-serif;
 }
-body{
+html{
+  font-size: 10px;
+}
+body {
   background-color: rgb(247, 244, 244);
 }
 
-@media (max-width:1280px) {
-  .partners{
-    flex-wrap: wrap;
-
-  }
-
-  nav{
+@media (max-width: 1280px) {
+  .partners {
     flex-wrap: wrap;
   }
-  .search-bar{
+
+  nav {
+    flex-wrap: wrap;
+  }
+  .search-bar {
     display: none;
   }
-  .partners>img{
+  .partners > img {
     margin: 20px;
   }
-  .meal-description{
+  .meal-description {
     flex-direction: column;
     gap: 10px;
   }
-  .categories{
+  .categories {
     flex-wrap: wrap;
     gap: 30px;
   }
-  .category>img{
+  .category > img {
     width: 20%;
   }
- nav{
-   flex-wrap: wrap;
- }
- .nav-links{
+  nav {
+    flex-wrap: wrap;
+  }
+  /* .nav-links {
     display: none;
-  }
-  
+  } */
 }
-@media (max-width:810px){
-  .hero{
+@media (max-width: 810px) {
+  .hero {
     flex-direction: column;
-    font-size: smaller;
-    row-gap:30px ;
+    font-size: 1.5rem;
+    row-gap: 30px;
+    width: 80%;
   }
-  .partners{
+  .partners {
     flex-direction: column;
-
   }
-    .hamburger{
-  display: block;
-  width: 5%;
-}
-  .cta-form{
-    width: 30%;
+  .hamburger {
+    display: block;
+    width: 5%;
   }
-   .nav{
-      flex-wrap: wrap;
-      gap: 10%;
-    }
-  .nav-links{
-    display: none;
+ 
+  .nav {
+    flex-wrap: wrap;
+    gap: 10%;
+  }
+  .nav-links {
+    /* display: none; */
   }
 
-  .categories{
+  .categories {
     align-items: center;
     width: 100%;
     margin: 0 auto;
-   
   }
-  .category{
+  .meals-container>.meal{
+    width: 80%;
+  }
+  .category {
     width: 30%;
-    
   }
-  /* .category>img{
-    width: 10%;
-  } */
-  
-
-  
-}
-@media (max-width:600px) {
-  .categories{
+  .pricing-plans{
     flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+    width: 100%;
   }
-  
-}
-@media (max-width:530px) {
-  
-  .user-testimony{
+  .pricing-plans>.card{
+    width: 60%;
+  }
+  .user-testimony {
     flex-direction: column;
     font-size: small;
     width: 30%;
   }
-  
-  .pricing{
+  /* .category>img{
+    width: 10%;
+  } */
+}
+@media (max-width: 600px) {
+  .categories {
+    flex-direction: column;
+  }
+}
+@media (max-width: 530px) {
+  .sign-up-form>form{
+    width: 100%;
+  }
+
+  /* .pricing {
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
-  }
-  .pricing>.card{
+  } */
+  /* .pricing > .card {
     font-size: smaller;
-  }
-  .pricing>.button{
+  } */
+  /* .pricing > .button {
     padding: 40%;
     width: 100%;
-  }
-  .category>{
+  } */
+  .category > {
     width: 100%;
-
   }
-  
-  
 }

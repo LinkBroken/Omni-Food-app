@@ -1,14 +1,20 @@
 .pricing {
   display: flex;
-  justify-content: space-evenly;
   margin-top: 100px;
+  flex-direction: column;
+}
+.pricing-header{
+  align-self: center;
+  padding: 1rem;
+  font-size: 2rem;
 }
 .card {
   display: flex;
   flex-direction: column;
-  width: 20%;
-  padding: 30px;
-  gap: 20px;
+  /* width: 10%; */
+  padding: 3rem;
+  gap: 4rem;
+  height: 16rem;
   align-items: center;
   border: 2px solid black;
   border-radius: 20px;
@@ -17,17 +23,39 @@
   background-color: rgb(190, 193, 193);
   font-size: larger;
 }
-.p-card > h1 {
-  color: rgb(82, 168, 114);
+.pricing-plans{
+  display: flex;
+  justify-content: space-between;
+  width:30%;
+  margin: 3rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5rem;
+  
 }
-.g-card > h1 {
+.premium-card{
+  background-color: #e67e22;
+  color: white;
+}
+/* .premium-card > h1 {
+  color: rgb(255, 255, 255);
+} */
+.gold-card > h1 {
   color: rgb(172, 122, 4);
 }
-.p-card > button {
-  background-color: rgb(82, 168, 114);
+.premium-card > button {
+  /* background-color: white; */
+    background-color: #e67e22;
+  color: black;
   font-size: larger;
+    color: white;
+
 }
-.g-card > button {
+.premium-card>button:hover{
+      background-color: #ee9e58;
+
+}
+.gold-card > button {
   background-color: rgb(172, 122, 4);
   font-size: larger;
 }
@@ -37,17 +65,14 @@
 .card > button {
   padding: 12px;
   text-decoration: none;
-  color: white;
+  /* color: white; */
   border-radius: 15px;
 }
 .card>button:hover{
   cursor: pointer;
   box-shadow: .5px .5px black;
 }
-.pricing-header {
-  text-decoration: underline;
-  margin-left: 10px;
-}
+
 .pricing > p {
   color: rgb(243, 125, 28);
 }

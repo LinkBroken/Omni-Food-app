@@ -3,8 +3,7 @@ nav{
   justify-content: space-evenly;
   padding: 20px;
   background-color: white;
-  color: rgb(44, 44, 44);
-  /* box-shadow: 2px 2px 2px 2px black */
+  color: #2c2c2c;
   border-bottom: 2px solid rgb(230, 227, 227);
   align-items: center;
   position: sticky;
@@ -13,26 +12,17 @@ nav{
 .hamburger{
   display: none;
 }
-.user-img-settings{
+.notifications{
   width: 10%;
   display: flex;
   flex-direction: row-reverse;
   column-gap: 10px;
 }
-.user-img-settings>img{
+.notifications>img{
   width: 50px;
   border-radius: 70px;
 }
-.welcome-message{
-  align-self: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap:5px;
-  width:30%
-}
-.welcome-message:first-child{
-  font-weight:lighter;
-}
+
 .search-bar{
   display: flex;
   gap: 10px;
@@ -40,10 +30,11 @@ nav{
   align-items: center;
 }
 
-.search-icon{
+svg.search-icon{
   width: 20px;
   height: 25px;
   position: absolute;
+  padding: 1rem;
   
 
 }
@@ -66,18 +57,24 @@ nav{
 }
 .nav-links{
   display: flex;
-  width: 80%;
+  width: 40%;
   justify-content: space-evenly;
 }
 .nav-links>a{
   text-decoration: none;
   color: black;
   background-color: rgb(243, 243, 243);
-  padding: 10px;
+  padding: 1rem;
   border-radius: 10px;
 
 }
 .nav-links>a:hover{
-  background-color: white;
+  background-color: rgb(216, 195, 163);
+  cursor: pointer;
 
+}
+.show{
+  display: none;
+  
+  
 }
