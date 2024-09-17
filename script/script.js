@@ -2,7 +2,7 @@ const meals = document.querySelector(".meals");
 const mealsHeader = document.createElement("h1");
 const mealsContainer = document.querySelector(".meals-container");
 const navIcon = document.querySelector(".hamburger");
-
+const navLinks = document.querySelector(".nav-links");
 mealsHeader.innerHTML = "Meals";
 mealsHeader.className = "meals-header";
 meals.appendChild(mealsHeader);
@@ -35,33 +35,41 @@ async function fishMeals() {
 
 fishMeals();
 
-navIcon.style.display !== "none"
-  ? document.querySelector(".nav-links").style.display == "flex"
-  : navIcon.addEventListener("click", () => {
-      document.querySelector(".nav-links").classList.toggle("show");
-    });
+if (screen.width <= 810) {
+  navIcon.addEventListener("click", () => {
+    console.log("switched");
+    navLinks.classList.toggle("show");
+  });
+} else {
+  console.log("bigger than ");
+  navLinks.className.includes("show") && navLinks.classList.remove("show");
+}
 
-
-const mealNavLink = document.getElementById("meal-link")
-const priceNavLink = document.getElementById("pricing-link")
-const testNavLink = document.getElementById("testimonies-link")
+const mealNavLink = document.getElementById("meal-link");
+const priceNavLink = document.getElementById("pricing-link");
+const testNavLink = document.getElementById("testimonies-link");
 const homeNavLink = document.getElementById("Home-link");
 
 homeNavLink.addEventListener("click", () => {
-  console.log(document.getElementsByClassName("meal")[0])
-  document.getElementsByClassName("app")[0].scrollIntoView({ behavior: "smooth" })
-})
+  console.log(document.getElementsByClassName("meal")[0]);
+  document
+    .getElementsByClassName("app")[0]
+    .scrollIntoView({ behavior: "smooth" });
+});
 mealNavLink.addEventListener("click", () => {
-  document.getElementsByClassName("meal")[0].scrollIntoView({ behavior: "smooth" })
-})
+  document
+    .getElementsByClassName("meal")[0]
+    .scrollIntoView({ behavior: "smooth" });
+});
 testNavLink.addEventListener("click", () => {
-  console.log(document.getElementsByClassName("test-header"))
-  document.getElementsByClassName("test-header")[0].scrollIntoView(({ top: 10, behavior: "smooth" }))
-})
+  console.log(document.getElementsByClassName("test-header"));
+  document
+    .getElementsByClassName("test-header")[0]
+    .scrollIntoView({ top: 10, behavior: "smooth" });
+});
 priceNavLink.addEventListener("click", () => {
-  document.getElementsByClassName("pricing-header")[0].scrollIntoView(({ top: 700, behavior: "smooth" }))
-})
-
-
-
+  document
+    .getElementsByClassName("pricing")[0]
+    .scrollIntoView({ top: 700, behavior: "smooth" });
+});
 
